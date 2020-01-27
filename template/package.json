@@ -12,19 +12,20 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.9.0",
-    "react-native": "0.61.5",
+    "react": "^16.9.0",
+    "react-native": "^0.61.0",
     "reason-react": "^0.7.0",
-    "reason-react-native": "0.61.1"
+    "reason-react-native": "^0.61.0"
   },
   "devDependencies": {
-    "@babel/core": "7.6.2",
-    "@babel/runtime": "7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^0.0.5",
-    "babel-jest": "24.9.0",
+    "babel-jest": "^24.9.0",
     "bs-platform": "^5.0.4",
-    "jest": "24.9.0",
-    "metro-react-native-babel-preset": "^0.56.1",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.56.0",
     "react-test-renderer": "16.9.0"
   },
   "jest": {
