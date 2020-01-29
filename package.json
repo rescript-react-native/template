@@ -4,6 +4,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": "https://github.com/reason-react-native/template",
   "license": "MIT",
   "keywords": [
     "reason",
