@@ -1,6 +1,9 @@
 {
-  "name": "reason-react-native-template",
-  "version": "0.1.0-beta.3",
+  "name": "@reason-react-native/template",
+  "version": "0.61.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "keywords": [
     "reason",
@@ -21,20 +24,19 @@
     "!template/lib/ocaml"
   ],
   "devDependencies": {
-    "bs-platform": "^5.0.4",
-    "husky": "^1.3.1",
-    "lerna": "^3.4.0",
-    "lint-staged": "^8.1.5",
-    "npm-run-all": "^3.0.0",
-    "prettier": "^1.16.4"
+    "bs-platform": "^7.0.0",
+    "husky": "^1.3.0",
+    "lint-staged": "^8.1.0",
+    "npmpub": "^5.0.0",
+    "prettier": "^1.18.0"
   },
   "scripts": {
+    "prepare": "cd template && yarn",
+    "test": "cd template && yarn re:build && yarn test",
     "format:most": "prettier --write \"**/*.{md,json,js,css}\"",
     "format:re": "find . -name \"*.re\" -or -name \"*.rei\" | grep -v \"node_modules\" | xargs bsrefmt --in-place",
     "format": "yarn format:most && yarn format:re",
-    "test": "cd template && yarn test",
-    "#prepublishOnly": "this is to include debug.keystore for android. Using files here doesn't work as .gitignore of the other folder seems to be *stronger*",
-    "prepublishOnly": "rm -f template/.npmignore && grep -w -v \"*.keystore\" template/.gitignore > template/.npmignore"
+    "release": "npmpub"
   },
   "prettier": {
     "trailingComma": "all",
@@ -42,7 +44,8 @@
   },
   "lint-staged": {
     "*.{md,json,js,css}": [
-      "prettier --write"
+      "prettier --write",
+      "git add"
     ],
     "*.{re,rei}": [
       "bsrefmt --in-place",
@@ -55,3 +58,4 @@
     }
   }
 }
+
