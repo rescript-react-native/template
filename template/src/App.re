@@ -45,7 +45,7 @@ module DebugInstructions = {
  The main different with JavaScript components you may encounter in React Native
  is the fact that they **must** be defined before being referenced
  (so before actual component definitions)
- More at https://reasonml-community.github.io/reason-react-native/en/docs/apis/Style/
+ More at https://reason-react-native.github.io/en/docs/apis/Style/
  */
 let styles =
   Style.(
@@ -139,7 +139,7 @@ let app = () =>
             <TouchableOpacity
               onPress={_ =>
                 openURLInBrowser(
-                  "https://reasonml-community.github.io/reason-react-native/en/docs/",
+                  "https://reason-react-native.github.io/en/docs/",
                 )
               }>
               <Text
@@ -152,8 +152,7 @@ let app = () =>
                     (),
                   )
                 )>
-                "https://reasonml-community.github.io/\nreason-react-native/"
-                ->React.string
+                "https://reason-react-native.github.io/"->React.string
               </Text>
             </TouchableOpacity>
           </View>
