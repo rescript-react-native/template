@@ -1,5 +1,9 @@
 # Changelog of `@reason-react-native/template`
 
+## 0.62.0 - 2020-08-11
+
+- Update deps [d55731f](https://github.com/reason-react-native/template/commit/d55731f) by [@MoOx](https://github.com/MoOx)
+
 ## 0.61.1 - 2020-01-29
 
 - Fix bs-platform version in yarn.lock
