@@ -1,6 +1,6 @@
 {
   "name": "@reason-react-native/template",
-  "version": "0.62.0",
+  "version": "0.62.1",
   "publishConfig": {
     "access": "public"
   },
