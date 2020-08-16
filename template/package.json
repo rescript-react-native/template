@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "react-native start",
-    "ios": "react-native run-ios",
-    "android": "react-native run-android",
+    "start": "npx react-native start",
+    "ios": "npx react-native run-ios",
+    "android": "npx react-native run-android",
     "re:clean": "bsb -clean-world",
     "re:watch": "bsb -clean-world -make-world -w",
     "re:build": "bsb -clean-world -make-world",
@@ -13,20 +13,20 @@
   },
   "dependencies": {
     "react": "^16.11.0",
-    "react-native": "^0.62.0",
-    "reason-react": "^0.9.0",
-    "reason-react-native": "^0.62.0"
+    "react-native": "^0.62.2",
+    "reason-react": "^0.9.1",
+    "reason-react-native": "^0.62.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/runtime": "^7.6.2",
-    "@react-native-community/eslint-config": "^0.0.7",
-    "babel-jest": "^24.9.0",
-    "bs-platform": "^8.0.0",
+    "@babel/core": "^7.11.1",
+    "@babel/runtime": "^7.11.1",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.3.0",
+    "bs-platform": "^8.2.0",
     "eslint": "^6.5.1",
-    "jest": "^24.9.0",
-    "metro-react-native-babel-preset": "^0.58.0",
-    "react-test-renderer": "16.11.0"
+    "jest": "^26.4.0",
+    "metro-react-native-babel-preset": "^0.62.0",
+    "react-test-renderer": "16.13.1"
   },
   "jest": {
     "preset": "react-native",
