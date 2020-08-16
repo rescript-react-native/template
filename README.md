@@ -13,8 +13,25 @@ experience.
 ## Start a Reason React Native project with this template
 
 ```console
-npx @react-native-community/cli init MyApp --template @reason-react-native/template
+npx react-native init MyApp --template @reason-react-native/template
 cd MyApp
+```
+
+## Compiling Reason
+
+Run `yarn watch`
+
+## Building
+
+Open a terminal in the projetc root and run:
+
+```console
+yarn start
+```
+
+To run the `ios` app run: 
+```console
+yarn ios
 ```
 
 Now that you are ready to go, you can check our documentation on
