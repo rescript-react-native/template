@@ -58,7 +58,7 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 
-# BuckleScript artifacts
+# ReScript / Reason / Ocaml artifacts
 *.bs.js
 .bsb.lock
 .merlin
