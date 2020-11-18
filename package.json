@@ -1,5 +1,6 @@
 {
   "name": "@reason-react-native/template",
+  "description": "React Native template for application developed with ReScript.",
   "version": "0.62.1",
   "publishConfig": {
     "access": "public"
