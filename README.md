@@ -3,9 +3,9 @@
 [![Version](https://img.shields.io/npm/v/@reason-react-native/template.svg)](https://www.npmjs.com/@reason-react-native/template)
 [![Chat](https://img.shields.io/discord/235176658175262720.svg?logo=discord&colorb=blue)](https://reason-react-native.github.io/discord/)
 
-> React Native template for application developed in Reason.
+> React Native template for application developed with ReScript.
 
-Please carefully read instructions below in order to enjoy ReasonML development
+Please carefully read instructions below in order to enjoy Rescript development
 experience.
 
 ## Setup

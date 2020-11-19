@@ -24,7 +24,7 @@
     "!template/ios/Pods"
   ],
   "devDependencies": {
-    "bs-platform": "^8.0.0",
+    "bs-platform": "^8.2.0",
     "husky": "^4.0.0",
     "lint-staged": "^10.0.0",
     "npmpub": "^5.0.0",
