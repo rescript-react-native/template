@@ -1,5 +1,13 @@
 # Changelog of `@reason-react-native/template`
 
+## 0.63.0 - 2020-11-18
+
+Updated for
+
+- react-native 0.63
+- reason-react-native 0.63
+- rescript 8.2
+
 ## 0.62.1 - 2020-08-13
 
 - Upgrade template to use RN 0.62 [#5](https://github.com/reason-react-native/template/pull/5) by [@Naturalclar](https://github.com/Naturalclar)
