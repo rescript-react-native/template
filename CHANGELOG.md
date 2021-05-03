@@ -1,5 +1,14 @@
 # Changelog of `@rescript-react-native/template`
 
+## 0.64.0 - 2021-05-03
+
+Updated for
+
+- rescript 9.0
+- @rescript/react 0.10
+- react-native 0.64
+- rescript-react-native 0.64
+
 ## 0.63.0 - 2020-11-18
 
 Updated for

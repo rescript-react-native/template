@@ -1,7 +1,7 @@
 {
   "name": "@rescript-react-native/template",
   "description": "React Native template for application developed with ReScript.",
-  "version": "0.63.0",
+  "version": "0.64.0",
   "publishConfig": {
     "access": "public"
   },
@@ -29,7 +29,7 @@
   },
   "scripts": {
     "prepare": "cd template && yarn",
-    "test": "cd template && yarn re:build && yarn test",
+    "test": "cd template && yarn res:build && yarn test",
     "format:most": "prettier --write \"**/*.{md,json,js,css}\"",
     "format:re": "find . -name \"*.re\" -or -name \"*.rei\" | grep -v \"node_modules\" | xargs bsrefmt --in-place",
     "format": "yarn format:most && yarn format:re",
