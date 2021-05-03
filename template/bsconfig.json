@@ -1,9 +1,6 @@
 {
   "name": "ProjectName",
-  "refmt": 3,
-  "reason": {
-    "react-jsx": 3
-  },
+  "reason": {"react-jsx": 3},
   "package-specs": {
     "module": "es6",
     "in-source": true
@@ -15,5 +12,5 @@
       "subdirs": true
     }
   ],
-  "bs-dependencies": ["reason-react", "reason-react-native"]
+  "bs-dependencies": ["@rescript/react", "rescript-react-native"]
 }

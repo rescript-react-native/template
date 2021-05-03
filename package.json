@@ -1,17 +1,14 @@
 {
-  "name": "@reason-react-native/template",
+  "name": "@rescript-react-native/template",
   "description": "React Native template for application developed with ReScript.",
   "version": "0.63.0",
   "publishConfig": {
     "access": "public"
   },
-  "repository": "https://github.com/reason-react-native/template",
+  "repository": "https://github.com/rescript-react-native/template",
   "license": "MIT",
   "keywords": [
     "rescript",
-    "reason",
-    "reasonml",
-    "bucklescript",
     "react-native",
     "react-native-template"
   ],
@@ -24,7 +21,7 @@
     "!template/ios/Pods"
   ],
   "devDependencies": {
-    "bs-platform": "^8.2.0",
+    "bs-platform": "^9.0.0",
     "husky": "^4.0.0",
     "lint-staged": "^10.0.0",
     "npmpub": "^5.0.0",
