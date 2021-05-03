@@ -13,12 +13,8 @@
     "react-native-template"
   ],
   "files": [
-    "*.md",
     "*.js",
-    "template/*",
-    "!template/android/app/build",
-    "!template/ios/build",
-    "!template/ios/Pods"
+    "template"
   ],
   "devDependencies": {
     "bs-platform": "^9.0.0",

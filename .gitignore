@@ -9,5 +9,3 @@ node_modules
 # npm unused lock file (we use yarn.lock)
 package-lock.json
 
-# generated from template/.gitignore
-template/.npmignore
