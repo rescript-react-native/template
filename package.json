@@ -1,7 +1,7 @@
 {
   "name": "@rescript-react-native/template",
   "description": "React Native template for application developed with ReScript.",
-  "version": "0.64.0",
+  "version": "0.64.1",
   "publishConfig": {
     "access": "public"
   },

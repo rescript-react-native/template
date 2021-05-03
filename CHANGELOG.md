@@ -1,5 +1,9 @@
 # Changelog of `@rescript-react-native/template`
 
+## 0.64.1 - 2021-05-03
+
+Fix npm tarball size.
+
 ## 0.64.0 - 2021-05-03
 
 Updated for
