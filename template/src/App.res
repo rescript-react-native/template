@@ -2,12 +2,11 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  */
-
-// Converted from
-// https://github.com/facebook/react-native/blob/0.64-stable/template/App.js
+open // Converted from
+// https://github.com/facebook/react-native/blob/v0.71.3/template/App.tsx
 // With a few tweaks
 
-open ReactNative
+ReactNative
 
 include ReactNativeHelloWorldUtils
 
@@ -21,18 +20,26 @@ let styles = {
   open Style
   StyleSheet.create({
     "sectionContainer": viewStyle(~marginTop=32.->dp, ~paddingHorizontal=24.->dp, ()),
-    "sectionTitle": textStyle(~fontSize=24., ~fontWeight=#_600, ()),
-    "sectionDescription": textStyle(~marginTop=8.->dp, ~fontSize=18., ~fontWeight=#_400, ()),
-    "highlight": textStyle(~fontWeight=#_700, ()),
+    "sectionTitle": textStyle(~fontSize=24., ()),
+    "sectionDescription": textStyle(
+      ~marginTop=8.->dp,
+      ~fontSize=18.,
+      ~fontWeight=FontWeight._400,
+      (),
+    ),
+    "highlight": textStyle(~fontWeight=FontWeight._700, ()),
   })
 }
 
-let useIsDarkMode = () => {
-  Appearance.useColorScheme()
-  ->Js.Null.toOption
-  ->Belt.Option.map(scheme => scheme === #dark)
-  ->Belt.Option.getWithDefault(false)
-}
+let useIsDarkMode = () =>
+  switch Appearance.useColorScheme() {
+  | Some(theme) =>
+    switch theme {
+    | #dark => true
+    | _ => false
+    }
+  | None => false
+  }
 
 // You can notice here the difference when you write a component that is not exported
 // We wrap this into a module and use a "make" function
@@ -70,7 +77,7 @@ module Section = {
 let app = () => {
   let isDarkMode = useIsDarkMode()
   <SafeAreaView>
-    <StatusBar barStyle={isDarkMode ? #lightContent : #darkContent} />
+    <StatusBar barStyle={isDarkMode ? #"light-content" : #"dark-content"} />
     <ScrollView
       contentInsetAdjustmentBehavior=#automatic
       style={
@@ -80,11 +87,15 @@ let app = () => {
       <Header />
       <Section title={"Step One"}>
         {"Edit "->React.string}
-        <Text style={styles["highlight"]}> {"src/App.re"->React.string} </Text>
+        <Text style={styles["highlight"]}> {"src/App.res"->React.string} </Text>
         {" to change this screen and then come back to see your edits."->React.string}
       </Section>
-      <Section title={"See Your Changes"}> <ReloadInstructions /> </Section>
-      <Section title={"Debug"}> <DebugInstructions /> </Section>
+      <Section title={"See Your Changes"}>
+        <ReloadInstructions />
+      </Section>
+      <Section title={"Debug"}>
+        <DebugInstructions />
+      </Section>
       <Section title={"Learn More"}>
         {"Read the docs to discover what to do next:"->React.string}
       </Section>
@@ -98,7 +109,7 @@ let app = () => {
                 style(
                   ~marginTop=8.->dp,
                   ~fontSize=18.,
-                  ~fontWeight=#_400,
+                  ~fontWeight=FontWeight._400,
                   ~color=colors.primary,
                   (),
                 )
