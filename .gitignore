@@ -1,11 +1,17 @@
 *.log
 
-# macOS crap
+# macOS
 .DS_Store
 
 # node
 node_modules
 
-# npm unused lock file (we use yarn.lock)
-package-lock.json
+# locks — root uses npm; template lock is generated at init/CI
+yarn.lock
+template/package-lock.json
 
+# ReScript build output
+*.res.js
+*.res.js.map
+lib/
+.bsb.lock

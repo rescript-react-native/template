@@ -1,5 +1,16 @@
 # Changelog of `@rescript-react-native/template`
 
+## 0.84.0 - 2026-09-15
+
+Updated for
+
+- react-native 0.84
+- rescript-react-native 0.84
+- rescript 12
+- @rescript/react 0.15
+- @react-native/new-app-screen + react-native-safe-area-context
+- Dropped `bs-platform` / BuckleScript maintainer tooling
+
 ## 0.64.1 - 2021-05-03
 
 Fix npm tarball size.

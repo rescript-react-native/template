@@ -1,7 +1,7 @@
 {
   "name": "@rescript-react-native/template",
-  "description": "React Native template for application developed with ReScript.",
-  "version": "0.64.1",
+  "description": "React Native template for applications developed with ReScript.",
+  "version": "0.84.0",
   "publishConfig": {
     "access": "public"
   },
@@ -13,38 +13,23 @@
     "react-native-template"
   ],
   "files": [
-    "*.js",
-    "template"
+    "template/*",
+    "template.config.js",
+    "script.js"
   ],
   "devDependencies": {
-    "bs-platform": "^9.0.0",
-    "husky": "^4.0.0",
-    "lint-staged": "^10.0.0",
-    "npmpub": "^5.0.0",
-    "prettier": "^2.0.0"
+    "npmpub": "^6.1.0",
+    "prettier": "^3.6.2"
   },
   "scripts": {
-    "prepare": "cd template && yarn",
-    "test": "cd template && yarn res:build && yarn test",
-    "format:most": "prettier --write \"**/*.{md,json,js,css}\"",
-    "format:re": "find . -name \"*.re\" -or -name \"*.rei\" | grep -v \"node_modules\" | xargs bsrefmt --in-place",
-    "format": "yarn format:most && yarn format:re",
+    "format": "prettier --write \"**/*.{md,json,js,css}\"",
+    "test": "npm install --prefix template && npm run res:build --prefix template && npm test --prefix template",
     "release": "npmpub"
   },
   "prettier": {
     "trailingComma": "all"
   },
-  "lint-staged": {
-    "*.{md,json,js,css}": [
-      "prettier --write"
-    ],
-    "*.{re,rei}": [
-      "bsrefmt --in-place"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "engines": {
+    "node": ">=22.11.0"
   }
 }
