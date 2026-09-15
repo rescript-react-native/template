@@ -1,5 +1,4 @@
 /**
- * Do not modify this file - it is a proxy to your `App.re` file
- * located in the `src/` folder.
+ * Do not modify this file — it is a proxy to your `src/App.res` file.
  */
-export { app as default } from "./src/App.bs.js";
+export {make as default} from './src/App.res.js';

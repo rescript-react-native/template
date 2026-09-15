@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
-console.log(
-  "You are now ready to use ReScript React Native. Be sure to check the docs at https://rescript-react-native.github.io/",
-);
+console.log(`
+You are ready to use ReScript React Native.
+
+  npm run res:watch   # compile ReScript on change
+  npm start           # start Metro
+
+Docs: https://rescript-react-native.github.io/
+`);

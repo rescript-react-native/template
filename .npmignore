@@ -1,0 +1,6 @@
+template/node_modules
+template/package-lock.json
+**/*.res.js
+**/*.res.js.map
+**/lib/
+.bsb.lock

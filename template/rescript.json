@@ -1,0 +1,22 @@
+{
+  "name": "HelloWorld",
+  "jsx": {
+    "version": 4
+  },
+  "package-specs": {
+    "module": "esmodule",
+    "in-source": true
+  },
+  "suffix": ".res.js",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "dependencies": [
+    "@rescript/react",
+    "rescript-react-native",
+    "@rescript-react-native/safe-area-context"
+  ]
+}
